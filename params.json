@@ -1,0 +1,6 @@
+{
+  "name": "SQLMate",
+  "tagline": "Rapidly generate a DAO for SQLite",
+  "body": "# Quick Mission:\r\nI tossed this together to speed-up the creation of allot of SQLite3 for Java / JDBC recently. These classes will generate the basic C.R.U.D operations for a DAO. Schema creation & drop as well.\r\n\r\nThought I would share the package.\r\n\r\n## Jump Start:\r\nThe demonstration on how to use this package is in main.java. See the source code for more information.\r\n* Sample output file from same is in SqlTestTable.java.\r\n* The implementation is designed for super-fast growth. \r\n\r\n\r\nSharing is caring,\r\n\r\nRandall Nagy\r\n-- Soft9000.com\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
