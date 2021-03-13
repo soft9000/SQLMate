@@ -20,9 +20,13 @@ public class DatabaseSchemaReader {
 
     public static List<SqlTable> ParseDatabase(Connection conn) throws SQLException, ExInvalid {
         Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM sqlite_master;");
-        String schema = rs.getString(1);
-        return ParseSqliteTables(schema);
+        ResultSet rs = stmt.executeQuery("SELECT SQL FROM sqlite_master;");
+        StringBuilder sb = new StringBuilder();
+        while(rs.next()) {
+            sb.append(rs.getString(1));
+            sb.append(" ");
+        }
+        return ParseSqliteTables(sb.toString().trim());
     }
 
     public static List<SqlTable> ParseSqliteTables(String schema) throws ExInvalid {
