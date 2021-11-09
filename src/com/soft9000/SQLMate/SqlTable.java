@@ -69,10 +69,10 @@ public class SqlTable extends SqlObject implements ISchemaValidator {
     public String writeColumnInfo() throws ExInvalid {
         validate();
         StringBuilder sb = new StringBuilder();
-        sb.append("\n\npublic static List<SqlColumn> GetFieldInfo() {");
+        sb.append("\n\npublic static List<SqlColumn> GetFieldInfo() {\n");
         sb.append("\tList<SqlColumn> result = new ArrayList<SqlColumn>();\n");
         for (SqlColumn ref : this.Columns) {
-            sb.append("\tresult.add(new SqlColumn(\"" + ref.getColumnName() + "\", EColumnType." + ref.getSqlType().toString() + "));");
+            sb.append("\tresult.add(new SqlColumn(\"" + ref.getColumnName() + "\", EColumnType." + ref.getSqlType().toString() + "));\n");
         }
         sb.append("\treturn result;\n}\n\n");
         return sb.toString();

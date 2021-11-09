@@ -22,7 +22,8 @@ public class main {
         StringBuilder sb = new StringBuilder();
         test.write(sb);
 
-        // Still a tad ugly - needs some work - feel free to omit / manually format output in your IDE;
+        // Still a tad ugly - needs some work - feel free to omit / manually 
+        // format output in your IDE;
         System.out.println(SourceCodeFormatter.FormatCode(sb.toString()));
     }
 }
