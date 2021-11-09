@@ -2,7 +2,7 @@
 Rapidly generate a DAO for SQLite
 
 Date: 2016/06/07
-Project: https://github.com/soft9000/SQLMate
+Project: https://github.com/soft9000/SQLMate-for-Java
 
 Tossed this together to speed-up the creation of a lot of SQLite3 for Java / JDBC recently. These classes will generate the basic C.R.U.D 
 operations for a DAO. Schema creation & drop as well.
