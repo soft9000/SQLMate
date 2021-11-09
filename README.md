@@ -1,4 +1,4 @@
-# SQLMate
+# SQLMate for Java
 Rapidly generate a DAO for SQLite
 
 Date: 2016/06/07
@@ -23,4 +23,6 @@ Randall Nagy
 -- Soft9000.com
 
 
-P.S: Note that the DAO NO LONGER closes the connection after each operation.
+P.S: Note that the DAO NO LONGER closes the connection after each operation. 
+
+If you're into Python, you might also enjoy [PyDAO](https://github.com/soft9000/PyDAO).
