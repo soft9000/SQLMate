@@ -23,4 +23,4 @@ Randall Nagy
 -- Soft9000.com
 
 
-P.S: Note that the DAO closes the connection after each operation. Feel free to remove until we upload the next release.
+P.S: Note that the DAO NO LONGER closes the connection after each operation.
