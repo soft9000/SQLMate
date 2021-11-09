@@ -11,7 +11,9 @@ Demonstration on how to use the package is in main.java.
    Sample output file from same is in SqlTestTable.java.
    The implementation is designed for super-fast growth. 
 
-Thought I would share the package.
+Thought I would share the package. 
+
+Feel free to join us on [Facebook](https://www.facebook.com/groups/javatraining9000).
 
 
 Cheers,
