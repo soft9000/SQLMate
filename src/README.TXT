@@ -1,3 +1,10 @@
+Date: 2024/01/18
+Version: 0.5
+Project: https://github.com/soft9000/SQLMate
+
+Added the getTableName().
+
+
 Date: 2021/11/06
 Version: 0.4
 Project: https://github.com/soft9000/SQLMate
