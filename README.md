@@ -13,7 +13,7 @@ Demonstration on how to use the package is in main.java.
 
 Thought I would share the package. 
 
-Feel free to join us on [Facebook](https://www.facebook.com/groups/javatraining9000).
+Feel free to join us on [Facebook](https://www.facebook.com/randall.nagy).
 
 
 Cheers,
