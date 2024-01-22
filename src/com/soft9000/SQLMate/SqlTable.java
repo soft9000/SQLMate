@@ -40,10 +40,10 @@ public class SqlTable extends SqlObject implements ISchemaValidator {
         StringBuilder sb = new StringBuilder();
         sb.append("CREATE TABLE IF NOT EXISTS ");
         sb.append(this.getTableName());
-        sb.append(" (");
+        sb.append(" (\\n");
         for (int ss = 0; ss < this.getColumns().size(); ss++) {
             if (ss != 0) {
-                sb.append(", ");
+                sb.append(",\\n");
             }
             SqlColumn ref = this.getColumns().get(ss);
             sb.append(ref.getColumnName());
@@ -53,7 +53,7 @@ public class SqlTable extends SqlObject implements ISchemaValidator {
                 sb.append(" PRIMARY KEY AUTOINCREMENT");
             }
         }
-        sb.append(") ;");
+        sb.append("\\n);");
         return sb.toString();
     }
 
