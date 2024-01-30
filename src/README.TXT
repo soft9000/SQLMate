@@ -1,3 +1,11 @@
+Date: 2024/01/30
+Version: 0.6
+Project: https://github.com/soft9000/SQLMate
+
+Added SqlDynamics package.
+Added com.soft900b support.
+
+
 Date: 2024/01/18
 Version: 0.5
 Project: https://github.com/soft9000/SQLMate
