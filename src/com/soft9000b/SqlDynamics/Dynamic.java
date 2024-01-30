@@ -30,13 +30,13 @@ public class Dynamic {
      * @param fields Dynamic list of field names therein.
      * @return All rows, as detected.
      */
-    public static ArrayList<ArrayList<TagPair>> SelectFields(Connection conn, String sqlSelect, List<SqlColumn> fields) {
+    public static List<ArrayList<TagPair>> SelectFields(Connection conn, String sqlSelect, List<SqlColumn> fields) {
         try {
             if (conn == null) {
                 throw new Exception("Connection Object Reference is NULL.");
             }
 
-            ArrayList<String> asIf = getDynamicFileds(sqlSelect);
+            List<String> asIf = getDynamicFields(sqlSelect);
 
             Statement smt = conn.createStatement();
             ResultSet ref = smt.executeQuery(sqlSelect);
@@ -99,8 +99,8 @@ public class Dynamic {
      * @param sqlSelect
      * @return The effective database field definition.
      */
-    public static ArrayList<String> getDynamicFileds(String sqlSelect) {
-        ArrayList<String> results = new ArrayList<String>();
+    public static List<String> getDynamicFields(String sqlSelect) {
+        ArrayList<String> results = new ArrayList<>();
         String[] cols = sqlSelect.replaceAll(",", "").replaceAll(";", "").toLowerCase().split(" as ");
         boolean bskip = true;
         for (String col : cols) {
@@ -116,7 +116,7 @@ public class Dynamic {
     }
 
     public static void main(String[] args) {
-        for (String val : getDynamicFileds("select foo as bar, select bar as net;")) {
+        for (String val : getDynamicFields("select foo as bar, select bar as net;")) {
             System.out.println(val);
         }
     }
