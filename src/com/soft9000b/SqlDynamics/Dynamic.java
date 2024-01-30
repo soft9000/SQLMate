@@ -44,33 +44,24 @@ public class Dynamic {
             while (ref.next()) {
                 ArrayList<TagPair> row = new ArrayList();
                 for (String dy : asIf) {
-                    getRow(row, ref, dy);
-                    results.add(row);
+                    TagPair tv = new TagPair();
+                    if (getColumn(tv, ref, dy)) {
+                        row.add(tv);
+                    }
                 }
                 for (SqlColumn field : fields) {
-                    getRow(row, ref, field.getColumnName());
-                    results.add(row);
+                    TagPair tv = new TagPair();
+                    if (getColumn(tv, ref, field.getColumnName())) {
+                        row.add(tv);
+                    }
                 }
+                results.add(row);
             }
             return results;
         } catch (Exception ex) {
             Logger.getLogger(Dynamic.class.getName()
             ).log(Level.SEVERE, ex.toString());
             return null;
-        }
-    }
-
-    /**
-     * Row definition as-a detection operation.
-     *
-     * @param results List of detected files names & values.
-     * @param ref The SQL query response.
-     * @param ColumnName The field / column name to check for.
-     */
-    static void getRow(ArrayList<TagPair> results, ResultSet ref, String ColumnName) {
-        TagPair tv = new TagPair();
-        if (getColumn(tv, ref, ColumnName)) {
-            results.add(tv);
         }
     }
 
