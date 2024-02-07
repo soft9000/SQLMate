@@ -1,7 +1,7 @@
 # SQLMate for Java
 Rapidly generate a DAO for SQLite.
 
-[image](https://github.com/soft9000/SQLMate/blob/gh-pages/_images/SqlMate01b.png)
+![zLogo](https://github.com/soft9000/SQLMate/blob/gh-pages/_images/SqlMate01b.png)
 
 Project: https://github.com/soft9000/SQLMate
 
