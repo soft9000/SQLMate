@@ -1,5 +1,5 @@
 # SQLMate
-Rapidly generate a Data-Access-Object (D.A.O) for embedding SQLite into any Java Aplication. ***Database Server not required!***
+**MISSION:** Rapidly generate a Data-Access-Object (D.A.O) for embedding SQLite into any Java Aplication. ***Database Server not required!***
 
 I tossed this together to speed-up the creation of a lot of SQLite3 code recently, I thought that I would share this effort with you. 
 
