@@ -14,7 +14,7 @@ public enum EColumnType {
     Integer("int", true),
     Long("long", true),
     Text("String", false),
-    Real("float", true),
+    Real("double", true),
     Blob("byte[]", false);
 
     private String javaType;

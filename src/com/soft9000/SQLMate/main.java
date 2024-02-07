@@ -12,18 +12,6 @@ package com.soft9000.SQLMate;
 public class main {
 
     public static void main(String... args) throws ExInvalid {
-        SqlCodeJavaJdbc test = new SqlCodeJavaJdbc();
-        test.getTable().setTableName("TestTable");
-        test.getTable().getColumns().add(new SqlColumn("ID", EColumnType.Integer));
-        test.getTable().getColumns().add(new SqlColumn("Name", EColumnType.Text));
-        test.getTable().getColumns().add(new SqlColumn("Big", EColumnType.Blob));
-        test.getConn().setDbFileName("TestDb");
-        test.getConn().setDbFilePath("com/soft9000");
-        StringBuilder sb = new StringBuilder();
-        test.write(sb);
-
-        // Still a tad ugly - needs some work - feel free to omit / manually 
-        // format output in your IDE;
-        System.out.println(SourceCodeFormatter.FormatCode(sb.toString()));
+        com.soft9000.TestDb.GenTestTable.main(args);
     }
 }

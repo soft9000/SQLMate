@@ -1,3 +1,13 @@
+Date: 2024/02/07
+Version: 0.7
+Project: https://github.com/soft9000/SQLMate
+
+Added TagPair assignment for each DAO.
+Added com.soft900b support for each DAO.
+Added ability to specify DAO package name - finally!
+Added ability to turn-off main() test-case creation.
+
+
 Date: 2024/01/30
 Version: 0.6
 Project: https://github.com/soft9000/SQLMate
