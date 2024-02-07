@@ -1,5 +1,5 @@
-# SQLMate for Java
-Rapidly generate a DAO for SQLite.
+# SQLMate
+Rapidly generate a DAO for SQLite using [JDBC](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).
 
 <image src="https://github.com/soft9000/SQLMate/blob/gh-pages/_images/SqlMate01b.png">
 
