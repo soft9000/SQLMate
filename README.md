@@ -1,26 +1,28 @@
 # SQLMate for Java
-Rapidly generate a DAO for SQLite
+Rapidly generate a DAO for SQLite.
 
-Date: 2016/06/07
 Project: https://github.com/soft9000/SQLMate-for-Java
 
-Tossed this together to speed-up the creation of a lot of SQLite3 for Java / JDBC recently. These classes will generate the basic C.R.U.D 
-operations for a DAO. Schema creation & drop as well.
+Tossed this together to speed-up the creation of a lot of SQLite3 for Java / JDBC recently. These classes will generate the basic C.R.U.D operations for a DAO. Schema creation & drop as well.
 
-Demonstration on how to use the package is in main.java.
-   Sample output file from same is in SqlTestTable.java.
-   The implementation is designed for super-fast growth. 
+The implementation is designed for super-fast growth. 
 
 Thought I would share the package. 
 
-Feel free to join us on [Facebook](https://www.facebook.com/randall.nagy).
+Demonstration on how to use the package is in [GenTestTable.java](https://github.com/soft9000/SQLMate-for-Java/blob/gh-pages/src/com/soft9000/TestDb/GenTestTable.java). Output class from same is in [SqlTestTable.java](https://github.com/soft9000/SQLMate-for-Java/blob/gh-pages/src/com/soft9000/TestDb/SqlTestTable.java).
 
+NEW: 2024 - We're now able to:
+1. [Dynamically SELECT Columns](https://github.com/soft9000/SQLMate-for-Java/blob/gh-pages/src/com/soft9000b/SqlDynamics/Dynamic.java).
+2. Dynamically detect aliases, as well as to
+3. Use [a key / value pair](https://github.com/soft9000/SQLMate-for-Java/blob/bfb230f6ba11fd397c995e52cb4188f950e0ef50/src/com/soft9000/TestDb/SqlTestTable.java#L20) to [any generated](https://github.com/soft9000/SQLMate-for-Java/blob/bfb230f6ba11fd397c995e52cb4188f950e0ef50/src/com/soft9000/TestDb/SqlTestTable.java#L208) DAO Column.
+
+Feel free to join us on [Facebook](https://www.facebook.com/randall.nagy).
 
 Cheers,
 
 
 Randall Nagy
--- Soft9000.com
+-- [Soft9000.com](http://soft9000.com)
 
 
 P.S: Note that the DAO NO LONGER closes the connection after each operation. 
