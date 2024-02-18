@@ -1,23 +1,26 @@
 # SQLMate
-Rapidly generate a DAO for SQLite using [JDBC](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/).
+**MISSION:** Rapidly generate a Data-Access-Object (D.A.O) for embedding SQLite into any Java Aplication. ***Database Server not required!***
+
+I tossed this together to speed-up the creation of a lot of SQLite3 code recently, I thought that I would share this effort with you. 
+
+These classes will generate the C.R.U.D operations for a DAO (DML.) Schema / SQL Table creation & drop (DDL.) The implementation is designed for super-fast growth. 
+
+Full support for all SQLite (TEXT, Integer, Real, & BLOB/CLOB) built-in data-types, as well. 
 
 <image src="https://github.com/soft9000/SQLMate/blob/gh-pages/_images/SqlMate01b.png">
 
 Project: https://github.com/soft9000/SQLMate
 
-Tossed this together to speed-up the creation of a lot of SQLite3 for Java / JDBC recently. These classes will generate the basic C.R.U.D operations for a DAO. Schema creation & drop as well.
+Demonstration on how to use the package is in [GenTestTable.java](https://github.com/soft9000/SQLMate-for-Java/blob/gh-pages/src/com/soft9000/TestDb/GenTestTable.java). 
 
-The implementation is designed for super-fast growth. 
-
-Thought I would share the package. 
-
-Demonstration on how to use the package is in [GenTestTable.java](https://github.com/soft9000/SQLMate-for-Java/blob/gh-pages/src/com/soft9000/TestDb/GenTestTable.java). Output class from same is in [SqlTestTable.java](https://github.com/soft9000/SQLMate-for-Java/blob/gh-pages/src/com/soft9000/TestDb/SqlTestTable.java).
+Output class from same is in [SqlTestTable.java](https://github.com/soft9000/SQLMate-for-Java/blob/gh-pages/src/com/soft9000/TestDb/SqlTestTable.java).
 
 
 NEW: 2024 - We're now able to:
 1. [Dynamically SELECT Columns](https://github.com/soft9000/SQLMate-for-Java/blob/gh-pages/src/com/soft9000b/SqlDynamics/Dynamic.java).
-2. Dynamically detect aliases, as well as to
-3. Use [a key / value pair](https://github.com/soft9000/SQLMate-for-Java/blob/bfb230f6ba11fd397c995e52cb4188f950e0ef50/src/com/soft9000/TestDb/SqlTestTable.java#L20) to [any generated](https://github.com/soft9000/SQLMate-for-Java/blob/bfb230f6ba11fd397c995e52cb4188f950e0ef50/src/com/soft9000/TestDb/SqlTestTable.java#L208) DAO Column.
+2. Dynamically detect aliases, as well as to:
+3. Use [a key / value pair](https://github.com/soft9000/SQLMate-for-Java/blob/bfb230f6ba11fd397c995e52cb4188f950e0ef50/src/com/soft9000/TestDb/SqlTestTable.java#L20) to populate [any generated](https://github.com/soft9000/SQLMate-for-Java/blob/bfb230f6ba11fd397c995e52cb4188f950e0ef50/src/com/soft9000/TestDb/SqlTestTable.java#L208) Java Class.
+
 
 Feel free to join us on [Facebook](https://www.facebook.com/randall.nagy).
 
