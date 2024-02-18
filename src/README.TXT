@@ -1,3 +1,10 @@
+Date: 2024/02/17
+Version: 0.7b
+Project: https://github.com/soft9000/SQLMate
+
+Return result of each TagPair assignment for each DAO.
+
+
 Date: 2024/02/07
 Version: 0.7
 Project: https://github.com/soft9000/SQLMate
