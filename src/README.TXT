@@ -1,3 +1,11 @@
+Date: 2024/02/19
+Version: 0.7b
+Project: https://github.com/soft9000/SQLMate
+
+Working on the GUI as another project.
+Removed the GUI placeholder. 
+
+
 Date: 2024/02/17
 Version: 0.7b
 Project: https://github.com/soft9000/SQLMate
