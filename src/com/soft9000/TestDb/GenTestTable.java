@@ -5,12 +5,6 @@
  */
 package com.soft9000.TestDb;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import com.soft9000.SQLMate.EColumnType;
 import com.soft9000.SQLMate.ExInvalid;
 import com.soft9000.SQLMate.SqlCodeJavaJdbc;
